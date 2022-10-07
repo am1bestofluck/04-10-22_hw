@@ -7,7 +7,7 @@ class task1{
         Scanner pipe_i=new Scanner(System.in);
         int limit_lower=99;//трёхзначные...
         int limit_upper=1000;//...числа. Синтаксис Словарей это нечто.
-        String number_i;//буфер для принятия ввода
+        String number_i="";//буфер для принятия ввода
         int number_m=-1;//буфер для оцифровки строки
         int number_o;//для матчасти
         System.out.println("...4zh");
@@ -30,9 +30,10 @@ class task1{
         pipe_i.close();
         System.out.println("Принято число "+String.valueOf(number_m)+"!");
         //матчасть
-        System.out.println("Математическое решение:");
+        System.out.println("Математическое решение: "+String.valueOf(number_m/10%10));
         //строки
-        System.out.println("строковое решение:");
+        System.out.println("строковое решение: "+number_i.substring(1,2));
+        
     }
     public static void main(String[] args){
         todo();
